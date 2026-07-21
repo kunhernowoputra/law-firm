@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kontak — Wirasena &amp; Partners</title>
+  <meta name="description" content="Alamat, telepon, email, dan form kontak Wirasena & Partners." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;450;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/theme.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Lewati ke konten</a>
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="brand" href="index.html" aria-label="Wirasena & Partners — Beranda">
+        <svg class="brand__mark" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect x="1" y="1" width="30" height="30" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M7 8.5l2.8 15L14 8.5l4.2 15L21 8.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M23.5 8.5v15" stroke="var(--accent)" stroke-width="1.4" stroke-linecap="round"/></svg>
+        <span class="brand__name">Wirasena<span> &amp;</span> Partners<small class="brand__sub">Attorneys at Law</small></span>
+      </a>
+      <nav class="nav" aria-label="Navigasi utama">
+        <a href="index.html">Beranda</a><a href="praktik.html">Area Praktik</a><a href="tim.html">Tim Advokat</a><a href="kontak.html" aria-current="page">Kontak</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn--ghost btn--sm" href="portal-login.html">Portal Klien</a>
+        <a class="btn btn--primary btn--sm" href="konsultasi.html">Konsultasi</a>
+        <button class="nav-toggle" data-nav-toggle aria-label="Buka menu" aria-expanded="false" aria-controls="mnav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-nav" id="mnav">
+    <a href="index.html">Beranda</a><a href="praktik.html">Area Praktik</a><a href="tim.html">Tim Advokat</a><a href="konsultasi.html">Konsultasi</a><a href="kontak.html">Kontak</a><a href="portal-login.html">Portal Klien</a>
+  </div>
+
+  <main id="main" class="section wrap">
+    <div class="reveal" style="margin-bottom:var(--s7)">
+      <p class="eyebrow">Kontak</p>
+      <h1 style="font-size:var(--fs-h1);margin-top:var(--s3);max-width:20ch">Mari bicara. Dengan tenang dan rahasia.</h1>
+    </div>
+
+    <div class="grid grid--2" style="gap:var(--s8);align-items:start">
+      <!-- left: info + map -->
+      <div class="reveal">
+        <div class="stack">
+          <div>
+            <p class="eyebrow no-rule" style="margin-bottom:var(--s2)">Kantor</p>
+            <p style="color:var(--ink);font-size:1.05rem">Menara Sudirman, Lantai 21<br />Jl. Jend. Sudirman Kav. 60<br />Jakarta Selatan 12190, Indonesia</p>
+          </div>
+          <div class="grid grid--2" style="gap:var(--s5)">
+            <div><p class="eyebrow no-rule" style="margin-bottom:var(--s2)">Telepon</p><a href="tel:+62212505050" style="font-size:1.05rem">+62 21 250 5050</a></div>
+            <div><p class="eyebrow no-rule" style="margin-bottom:var(--s2)">Email</p><a href="mailto:halo@wirasena.co.id" style="font-size:1.05rem">halo@wirasena.co.id</a></div>
+          </div>
+          <div><p class="eyebrow no-rule" style="margin-bottom:var(--s2)">Jam kerja</p><p style="color:var(--ink-2)">Senin–Jumat · 09.00–18.00 WIB</p></div>
+        </div>
+        <!-- map placeholder -->
+        <div style="margin-top:var(--s6);aspect-ratio:16/10;border-radius:var(--r);border:1px solid var(--line);overflow:hidden;position:relative;background:
+          linear-gradient(135deg,var(--bg-sunk),var(--bg-alt))">
+          <div class="facade" style="opacity:.6;mask-image:none"></div>
+          <div style="position:absolute;inset:0;display:grid;place-items:center;text-align:center">
+            <div>
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.6" style="margin:0 auto"><path d="M12 21s-7-6.2-7-11a7 7 0 0114 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <p style="font-family:var(--font-mono);font-size:var(--fs-xs);color:var(--ink-3);letter-spacing:.08em;margin-top:var(--s3)">PETA · SCBD, JAKARTA SELATAN</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- right: contact form -->
+      <div class="card reveal" data-delay="1">
+        <h2 style="font-size:var(--fs-h3)">Kirim pesan</h2>
+        <p style="color:var(--ink-3);font-size:var(--fs-sm);margin-top:var(--s2);margin-bottom:var(--s5)">Untuk penjadwalan konsultasi berbayar, gunakan <a href="konsultasi.html">form konsultasi</a>.</p>
+        <form data-validate data-toast="Pesan terkirim. Kami akan membalas dalam 1×24 jam kerja.">
+          <div class="field"><label class="label" for="k-nama">Nama <span class="req">*</span></label><input class="input" id="k-nama" required autocomplete="name" /><span class="field-error">Nama wajib diisi.</span></div>
+          <div class="field"><label class="label" for="k-email">Email <span class="req">*</span></label><input class="input" id="k-email" type="email" required autocomplete="email" /><span class="field-error">Masukkan email yang valid.</span></div>
+          <div class="field"><label class="label" for="k-subjek">Subjek</label><input class="input" id="k-subjek" /></div>
+          <div class="field"><label class="label" for="k-pesan">Pesan <span class="req">*</span></label><textarea class="textarea" id="k-pesan" required placeholder="Tuliskan pesan Anda…"></textarea><span class="field-error">Pesan wajib diisi.</span></div>
+          <button type="submit" class="btn btn--primary btn--block" style="margin-top:var(--s5)"><span class="btn__label">Kirim Pesan</span></button>
+          <p class="hint" style="text-align:center;margin-top:var(--s4)">Dengan mengirim, Anda menyetujui bahwa informasi ini bersifat umum dan bukan nasihat hukum.</p>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="confidential" style="margin-top:0">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+        <div><b>Kerahasiaan Klien Dilindungi</b><p>Seluruh komunikasi bersifat rahasia dan dilindungi hak imunitas advokat sesuai UU No. 18/2003 tentang Advokat dan Kode Etik Advokat Indonesia.</p></div>
+      </div>
+      <div class="footer-legal"><span>© 2026 Wirasena &amp; Partners. Terdaftar pada PERADI.</span><span>Jakarta</span></div>
+    </div>
+  </footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>

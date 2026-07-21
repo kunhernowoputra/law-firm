@@ -1,5 +1,11 @@
+/* Entry Tailwind + design system global.
+   @import di paling atas (spec-compliant) → Vite meng-inline partial ke bundle.
+   Urutan cascade: reset+token (tokens.css) → semantic classes (components.css) → utilities Tailwind.
+   Preflight Tailwind dimatikan (tailwind.config) karena reset sudah di tokens.css — sekaligus paritas
+   prototipe yang memang tanpa CSS-framework reset. Larangan <style scoped> di .vue (CONVENTIONS). */
+@import './tokens.css';
+@import './components.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* Style global custom di bawah ini. Token & utilities → tailwind.config.js. */

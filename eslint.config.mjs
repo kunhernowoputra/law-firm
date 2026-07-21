@@ -13,6 +13,8 @@ export default withNuxt({
 
         // — Code style (CONVENTIONS §1) —
         // Indentasi/print-width diserahkan ke Prettier (tabWidth 4, printWidth 9999).
+        // vue/html-self-closing dimatikan: bentrok dengan Prettier (Prettier = otoritas formatting).
+        'vue/html-self-closing': 'off',
         'no-console': ['warn', { allow: ['warn', 'error'] }],
         'prefer-const': 'error',
         eqeqeq: ['error', 'always'],

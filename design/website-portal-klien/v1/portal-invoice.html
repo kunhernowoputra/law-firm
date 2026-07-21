@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Invoice — Portal Klien · Wirasena &amp; Partners</title>
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;450;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/theme.css" />
+</head>
+<body>
+  <div class="portal">
+    <aside class="side">
+      <a class="side__brand" href="index.html">
+        <svg class="brand__mark" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect x="1" y="1" width="30" height="30" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M7 8.5l2.8 15L14 8.5l4.2 15L21 8.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M23.5 8.5v15" stroke="var(--accent)" stroke-width="1.4" stroke-linecap="round"/></svg>
+        <span class="brand__name" style="font-size:1rem">Wirasena<span> &amp;</span> P.</span>
+      </a>
+      <nav class="side__nav" aria-label="Navigasi portal">
+        <p class="side__label">Menu</p>
+        <a href="portal-dashboard.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg> Dashboard</a>
+        <a href="portal-dokumen.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 3H6a2 2 0 00-2 2v14a2 2 0 002 2h12a2 2 0 002-2V9z"/><path d="M14 3v6h6"/></svg> Dokumen</a>
+        <a href="portal-invoice.html" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 2h9l5 5v13a1 1 0 01-1 1H6a1 1 0 01-1-1V3a1 1 0 011-1z"/><path d="M9 13h6M9 17h6M9 9h2"/></svg> Invoice</a>
+        <a href="konsultasi.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg> Konsultasi</a>
+      </nav>
+      <div class="side__foot">
+        <div class="userchip"><span class="userchip__av">BP</span><span style="min-width:0"><b>Budi Prasetyo</b><small>PT Nusantara Energy</small></span></div>
+        <nav class="side__nav" style="margin-top:var(--s3)"><a href="portal-login.html" style="color:var(--ink-3)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/><path d="M16 17l5-5-5-5M21 12H9"/></svg> Keluar</a></nav>
+      </div>
+    </aside>
+
+    <div class="portal__main">
+      <header class="topbar">
+        <h1 class="topbar__title">Invoice</h1>
+        <div class="topbar__actions">
+          <div class="tabs" style="border:0;margin:0" role="group" aria-label="Demo status">
+            <button class="is-active" data-state-for="inv" data-state-set="data">Ada isi</button>
+            <button data-state-for="inv" data-state-set="empty">Kosong</button>
+          </div>
+          <button class="icon-btn" data-theme-toggle aria-label="Ganti tema"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg></button>
+        </div>
+      </header>
+
+      <div class="portal__body" data-state-group="inv">
+        <div data-state="data">
+          <div class="stat-tiles" style="grid-template-columns:repeat(3,1fr)">
+            <div class="tile"><p class="tile__label">Total tertagih</p><p class="tile__value">Rp 24,5<small> jt</small></p></div>
+            <div class="tile"><p class="tile__label">Belum dibayar</p><p class="tile__value" style="color:var(--warn)">Rp 12,0<small> jt</small></p></div>
+            <div class="tile"><p class="tile__label">Lunas tahun ini</p><p class="tile__value" style="color:var(--ok)">Rp 12,5<small> jt</small></p></div>
+          </div>
+
+          <div class="panel" style="margin-top:var(--s6)">
+            <div class="panel__head"><h3 style="font-size:1rem">Daftar invoice</h3><span class="row__sub">4 invoice</span></div>
+            <div class="rows panel__body--flush">
+              <!-- belum bayar -->
+              <div class="row">
+                <span class="row__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 2h9l5 5v13a1 1 0 01-1 1H6a1 1 0 01-1-1V3a1 1 0 011-1z"/><path d="M9 13h6M9 17h6"/></svg></span>
+                <div class="row__main"><p class="row__name">Jasa Hukum — Due Diligence &amp; SPA</p><p class="row__sub">INV-2026-0142-03 · WP-2026-0142 · Jatuh tempo 30 Jul 2026</p></div>
+                <div class="row__end">
+                  <span style="font-family:var(--font-mono);font-weight:500;color:var(--ink)">Rp 12.000.000</span>
+                  <span class="tag tag--warn"><span class="tag__dot"></span>Belum bayar</span>
+                  <button class="btn btn--primary btn--sm" data-pay="INV-2026-0142-03" data-amt="Rp 12.000.000">Bayar</button>
+                </div>
+              </div>
+              <!-- gagal -> retry -->
+              <div class="row">
+                <span class="row__icon" style="background:var(--bad-soft);color:var(--bad)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 8v4M12 16h.01"/></svg></span>
+                <div class="row__main"><p class="row__name">Retainer Bulanan — Juni 2026</p><p class="row__sub" style="color:var(--bad)">INV-2026-0142-02 · Pembayaran terakhir gagal — status tetap belum bayar</p></div>
+                <div class="row__end">
+                  <span style="font-family:var(--font-mono);font-weight:500;color:var(--ink)">Rp 7.500.000</span>
+                  <span class="tag tag--bad"><span class="tag__dot"></span>Gagal</span>
+                  <button class="btn btn--outline btn--sm" data-pay="INV-2026-0142-02" data-amt="Rp 7.500.000"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:6px"><path d="M23 4v6h-6M1 20v-6h6"/><path d="M3.5 9a9 9 0 0114.9-3.4L23 10M1 14l4.6 4.4A9 9 0 0020.5 15"/></svg>Coba lagi</button>
+                </div>
+              </div>
+              <!-- lunas -> tak bisa bayar dobel -->
+              <div class="row">
+                <span class="row__icon" style="background:var(--ok-soft);color:var(--ok)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20 6L9 17l-5-5"/></svg></span>
+                <div class="row__main"><p class="row__name">Retainer Bulanan — Mei 2026</p><p class="row__sub">INV-2026-0142-01 · Dibayar 03 Jun 2026 · VA BCA</p></div>
+                <div class="row__end">
+                  <span style="font-family:var(--font-mono);font-weight:500;color:var(--ink-3)">Rp 7.500.000</span>
+                  <span class="tag tag--ok"><span class="tag__dot"></span>Lunas</span>
+                  <button class="btn btn--ghost btn--sm" disabled aria-disabled="true" title="Invoice sudah lunas">Lunas</button>
+                </div>
+              </div>
+              <div class="row">
+                <span class="row__icon" style="background:var(--ok-soft);color:var(--ok)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20 6L9 17l-5-5"/></svg></span>
+                <div class="row__main"><p class="row__name">Biaya Pendaftaran Perkara</p><p class="row__sub">INV-2026-0138-01 · Dibayar 20 Mei 2026 · Kartu Kredit</p></div>
+                <div class="row__end">
+                  <span style="font-family:var(--font-mono);font-weight:500;color:var(--ink-3)">Rp 5.000.000</span>
+                  <span class="tag tag--ok"><span class="tag__dot"></span>Lunas</span>
+                  <button class="btn btn--ghost btn--sm" disabled aria-disabled="true">Lunas</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="hint" style="margin-top:var(--s4)">Pembayaran diproses melalui payment gateway tersertifikasi. Wirasena &amp; Partners tidak menyimpan data kartu Anda.</p>
+        </div>
+
+        <!-- EMPTY -->
+        <div data-state="empty" class="hidden">
+          <div class="panel">
+            <div class="state">
+              <div class="state__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 2h9l5 5v13a1 1 0 01-1 1H6a1 1 0 01-1-1V3a1 1 0 011-1z"/><path d="M9 13h6M9 17h6"/></svg></div>
+              <h3>Tidak ada invoice</h3>
+              <p>Belum ada tagihan yang diterbitkan untuk akun Anda. Invoice akan muncul di sini beserta status pembayarannya.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="portal-tabbar" aria-label="Navigasi portal">
+        <a href="portal-dashboard.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>Dashboard</a>
+        <a href="portal-dokumen.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 3H6a2 2 0 00-2 2v14a2 2 0 002 2h12a2 2 0 002-2V9z"/><path d="M14 3v6h6"/></svg>Dokumen</a>
+        <a href="portal-invoice.html" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 2h9l5 5v13a1 1 0 01-1 1H6a1 1 0 01-1-1V3a1 1 0 011-1z"/><path d="M9 13h6M9 17h6"/></svg>Invoice</a>
+        <a href="portal-login.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M16 17l5-5-5-5M21 12H9M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/></svg>Keluar</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- PAYMENT MODAL -->
+  <div class="modal-scrim" id="pay-scrim" role="dialog" aria-modal="true" aria-labelledby="pay-title">
+    <div class="modal">
+      <div class="modal__head">
+        <h3 id="pay-title">Bayar invoice</h3>
+        <p class="row__sub" id="pay-meta" style="margin-top:4px">INV — Rp —</p>
+      </div>
+      <div class="modal__body stack" id="pay-body">
+        <div class="field"><label class="label">Metode pembayaran</label>
+          <div class="stack" style="--s4:10px">
+            <label class="choice" style="display:block"><input type="radio" name="method" checked /><span class="choice__box"><b>Virtual Account (BCA / Mandiri / BNI)</b><small>Konfirmasi otomatis dalam beberapa menit</small></span></label>
+            <label class="choice" style="display:block"><input type="radio" name="method" /><span class="choice__box"><b>Kartu Kredit / Debit</b><small>Visa, Mastercard</small></span></label>
+          </div>
+        </div>
+      </div>
+      <div class="modal__foot">
+        <button class="btn btn--ghost" data-close-modal>Batal</button>
+        <button class="btn btn--primary" id="pay-confirm"><span class="btn__label">Lanjut Bayar</span></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/app.js"></script>
+  <script>
+    (() => {
+      const scrim = document.getElementById('pay-scrim');
+      const confirm = document.getElementById('pay-confirm');
+      const meta = document.getElementById('pay-meta');
+      let currentRow = null;
+      const open = () => scrim.classList.add('is-open');
+      const close = () => { scrim.classList.remove('is-open'); confirm.classList.remove('is-loading'); confirm.querySelector('.btn__spinner')?.remove(); confirm.querySelector('.btn__label').textContent = 'Lanjut Bayar'; };
+
+      document.querySelectorAll('[data-pay]').forEach((b) =>
+        b.addEventListener('click', () => {
+          currentRow = b.closest('.row');
+          meta.textContent = b.dataset.pay + ' — ' + b.dataset.amt;
+          open();
+        }));
+      scrim.addEventListener('click', (e) => { if (e.target === scrim) close(); });
+      document.querySelectorAll('[data-close-modal]').forEach((b) => b.addEventListener('click', close));
+      document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+
+      confirm.addEventListener('click', () => {
+        if (confirm.classList.contains('is-loading')) return; // guard double pay
+        confirm.classList.add('is-loading');
+        confirm.insertAdjacentHTML('afterbegin', '<span class="btn__spinner"></span>');
+        confirm.querySelector('.btn__label').textContent = 'Memproses…';
+        setTimeout(() => {
+          close();
+          // mark row as paid (lunas) — cannot be paid twice
+          if (currentRow) {
+            const end = currentRow.querySelector('.row__end');
+            end.innerHTML = '<span style="font-family:var(--font-mono);font-weight:500;color:var(--ink-3)">' + (meta.textContent.split('— ')[1] || '') + '</span><span class="tag tag--ok"><span class="tag__dot"></span>Lunas</span><button class="btn btn--ghost btn--sm" disabled aria-disabled="true">Lunas</button>';
+            currentRow.querySelector('.row__icon').style.cssText = 'background:var(--ok-soft);color:var(--ok)';
+          }
+          window.showToast('Pembayaran berhasil. Invoice ditandai lunas.');
+        }, 1500);
+      });
+    })();
+  </script>
+</body>
+</html>
