@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+# Pre-commit gate — commit ditolak kalau lint/format gagal. (Vanilla JS, tanpa typecheck.)
+npx lint-staged

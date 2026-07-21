@@ -1,0 +1,27 @@
+name: CI
+
+# Gerbang merge. Aktifkan branch protection (Settings → Branches → Require status checks)
+# supaya PR tidak bisa merge kalau job ini merah.
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - name: Install
+        run: npm ci
+      - name: Lint
+        run: npm run lint
+      - name: Test
+        run: npm run test
+      - name: Security audit
+        run: npm run audit:ci
