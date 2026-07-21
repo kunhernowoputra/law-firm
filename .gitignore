@@ -26,3 +26,8 @@ logs
 # token tracking (lokal, personal)
 token-usage.md
 .token-usage.tsv
+
+# Artefak proses (design-studio, docs, tech-handoff) — lokal, tak masuk repo
+/design
+/docs
+/tech-handoff
