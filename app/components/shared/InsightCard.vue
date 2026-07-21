@@ -1,6 +1,8 @@
 <template>
     <article class="insight reveal" :data-delay="delay || undefined">
-        <div class="insight__thumb" />
+        <NuxtLink :to="to" class="insight__thumb" tabindex="-1" aria-hidden="true">
+            <img v-if="imageUrl" :src="imageUrl" :alt="title" loading="lazy" />
+        </NuxtLink>
         <div class="insight__cat">
             <span class="tag tag--accent">{{ category }}</span>
         </div>
@@ -20,6 +22,7 @@
         date: { type: String, required: true },
         readMinutes: { type: Number, required: true },
         to: { type: String, default: '#' },
+        imageUrl: { type: String, default: '' },
         delay: { type: Number, default: 0 },
     })
 </script>

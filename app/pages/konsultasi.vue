@@ -21,7 +21,7 @@
     const { isDone } = useKonsultasi()
 
     useHead({
-        title: 'Konsultasi & Booking — Wirasena & Partners',
+        title: 'Konsultasi & Booking — Ridwan & Co.',
         meta: [{ name: 'description', content: 'Ajukan konsultasi hukum dan pilih jadwal. Masalah Anda dirutekan otomatis ke area praktik yang sesuai.' }],
     })
 </script>

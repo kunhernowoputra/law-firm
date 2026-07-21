@@ -23,7 +23,7 @@
     const { attorneys, total } = useTim()
 
     useHead({
-        title: 'Tim Advokat — Wirasena & Partners',
-        meta: [{ name: 'description', content: 'Profil advokat dan konsultan hukum Wirasena & Partners.' }],
+        title: 'Tim Advokat — Ridwan & Co.',
+        meta: [{ name: 'description', content: 'Profil advokat dan konsultan hukum Ridwan & Co..' }],
     })
 </script>

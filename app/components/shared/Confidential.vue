@@ -16,7 +16,7 @@
         title: { type: String, default: 'Kerahasiaan Klien Dilindungi' },
         body: {
             type: String,
-            default: 'Seluruh komunikasi dan dokumen yang Anda sampaikan kepada Wirasena & Partners bersifat rahasia dan dilindungi hak imunitas advokat sesuai Undang-Undang No. 18 Tahun 2003 tentang Advokat serta Kode Etik Advokat Indonesia. Informasi di situs ini bersifat umum dan bukan merupakan nasihat hukum; hubungan advokat–klien baru terbentuk setelah kesepakatan tertulis.',
+            default: 'Seluruh komunikasi dan dokumen yang Anda sampaikan kepada Ridwan & Co. bersifat rahasia dan dilindungi hak imunitas advokat sesuai Undang-Undang No. 18 Tahun 2003 tentang Advokat serta Kode Etik Advokat Indonesia. Informasi di situs ini bersifat umum dan bukan merupakan nasihat hukum; hubungan advokat–klien baru terbentuk setelah kesepakatan tertulis.',
         },
     })
 </script>

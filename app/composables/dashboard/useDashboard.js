@@ -22,7 +22,7 @@ export const useDashboard = () => {
             { date: 'Mendatang', title: 'Penandatanganan & Closing', desc: 'Eksekusi transaksi dan pemenuhan condition precedent.', state: 'upcoming' },
         ],
         advokat: [
-            { initials: 'AW', name: 'Arya Wirasena', role: 'Managing Partner · M&A' },
+            { initials: 'AW', name: 'Arya Ridwan', role: 'Managing Partner · M&A' },
             { initials: 'DS', name: 'Dimas Saputra', role: 'Senior Associate' },
         ],
     }

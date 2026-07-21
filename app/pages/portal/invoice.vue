@@ -12,7 +12,7 @@
                     <InvoiceRow v-for="inv in invoices" :key="inv.id" :invoice="inv" />
                 </div>
             </div>
-            <p class="hint" style="margin-top: var(--s4)">Pembayaran diproses melalui payment gateway tersertifikasi. Wirasena & Partners tidak menyimpan data kartu Anda.</p>
+            <p class="hint" style="margin-top: var(--s4)">Pembayaran diproses melalui payment gateway tersertifikasi. Ridwan & Co. tidak menyimpan data kartu Anda.</p>
         </template>
 
         <div v-else class="panel">
@@ -37,5 +37,5 @@
 
     const { invoices, stats } = useInvoice()
 
-    useHead({ title: 'Invoice — Portal Klien · Wirasena & Partners', meta: [{ name: 'robots', content: 'noindex' }] })
+    useHead({ title: 'Invoice — Portal Klien · Ridwan & Co.', meta: [{ name: 'robots', content: 'noindex' }] })
 </script>

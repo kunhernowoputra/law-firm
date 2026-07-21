@@ -19,7 +19,7 @@
             <SharedConfidential :style="isSlim ? 'margin-top:0' : undefined" />
 
             <div class="footer-legal">
-                <span>© 2026 Wirasena & Partners. Terdaftar pada PERADI.</span>
+                <span>© 2026 Ridwan & Co.. Terdaftar pada PERADI.</span>
                 <span>Dirancang dengan restraint · Jakarta</span>
             </div>
         </div>

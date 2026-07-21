@@ -9,8 +9,14 @@
                     <b style="color: #fff">{{ testimonial.byRole }}</b> · {{ testimonial.byDetail }}
                 </footer>
             </blockquote>
-            <div v-if="clients.length" class="logo-strip reveal" data-delay="2" style="margin-top: var(--s8)">
-                <span v-for="client in clients" :key="client" style="color: rgba(255, 255, 255, 0.55)">{{ client }}</span>
+            <div v-if="clients.length" class="client-showcase reveal" data-delay="2" style="margin-top: var(--s8)">
+                <p class="client-showcase__label">Klien Kami</p>
+                <div class="client-grid">
+                    <div v-for="client in clients" :key="client.name" class="client-card" :title="client.name">
+                        <img :src="client.logo" :alt="client.name" loading="lazy" />
+                        <span class="client-card__name">{{ client.name }}</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

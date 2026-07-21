@@ -7,7 +7,7 @@
             </div>
             <div class="reveal" data-delay="1">
                 <div class="prose">
-                    <p>Wirasena & Partners adalah firma hukum menengah yang berdiri sejak 2004. Kami percaya bahwa nasihat hukum terbaik lahir dari ketelitian, pemahaman industri klien, dan penghormatan mutlak terhadap kerahasiaan.</p>
+                    <p>Ridwan & Co. adalah firma hukum menengah yang berdiri sejak 2004. Kami percaya bahwa nasihat hukum terbaik lahir dari ketelitian, pemahaman industri klien, dan penghormatan mutlak terhadap kerahasiaan.</p>
                     <p>Setiap mandat ditangani oleh tim yang dipimpin advokat senior, dengan jalur komunikasi yang jelas dan dokumentasi yang tertib melalui portal klien kami.</p>
                 </div>
                 <div class="grid grid--2" style="margin-top: var(--s6); gap: var(--s5)">

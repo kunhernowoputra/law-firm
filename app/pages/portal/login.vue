@@ -11,7 +11,7 @@
     definePageMeta({ layout: false })
 
     useHead({
-        title: 'Portal Klien — Masuk · Wirasena & Partners',
+        title: 'Portal Klien — Masuk · Ridwan & Co.',
         meta: [{ name: 'robots', content: 'noindex' }],
     })
 </script>

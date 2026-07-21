@@ -20,7 +20,7 @@
     const { areas } = usePraktik()
 
     useHead({
-        title: 'Area Praktik — Wirasena & Partners',
+        title: 'Area Praktik — Ridwan & Co.',
         meta: [{ name: 'description', content: 'Enam area praktik: Korporat, M&A, Perpajakan, Kekayaan Intelektual, Ketenagakerjaan, dan Litigasi & Arbitrase.' }],
     })
 </script>

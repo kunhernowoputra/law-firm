@@ -3,7 +3,7 @@
 export const useTim = () => {
     const total = 14
     const attorneys = [
-        { name: 'Arya Wirasena, S.H., LL.M.', initials: 'AW', role: 'Managing Partner', meta: 'Korporat · M&A · 22 thn' },
+        { name: 'Arya Ridwan, S.H., LL.M.', initials: 'AW', role: 'Managing Partner', meta: 'Korporat · M&A · 22 thn' },
         { name: 'Laksmi Kusuma, S.H.', initials: 'LK', role: 'Partner — Litigasi', meta: 'Litigasi · Arbitrase · 17 thn' },
         { name: 'Raka Pramudya, S.H., M.H.', initials: 'RP', role: 'Partner — Perpajakan', meta: 'Pajak · Kepatuhan · 15 thn' },
         { name: 'Sekar Hapsari, S.H., M.Kn.', initials: 'SH', role: 'Partner — Korporat', meta: 'Korporat · Notariat · 14 thn' },

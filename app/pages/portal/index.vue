@@ -35,5 +35,5 @@
 
     const { client, stats, cases, mainCase, secondCase } = useDashboard()
 
-    useHead({ title: 'Dashboard — Portal Klien · Wirasena & Partners', meta: [{ name: 'robots', content: 'noindex' }] })
+    useHead({ title: 'Dashboard — Portal Klien · Ridwan & Co.', meta: [{ name: 'robots', content: 'noindex' }] })
 </script>

@@ -22,5 +22,5 @@
 
     const { docs, queue } = useDokumen()
 
-    useHead({ title: 'Dokumen — Portal Klien · Wirasena & Partners', meta: [{ name: 'robots', content: 'noindex' }] })
+    useHead({ title: 'Dokumen — Portal Klien · Ridwan & Co.', meta: [{ name: 'robots', content: 'noindex' }] })
 </script>

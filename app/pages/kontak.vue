@@ -19,7 +19,7 @@
     definePageMeta({ footerVariant: 'slim' })
 
     useHead({
-        title: 'Kontak — Wirasena & Partners',
-        meta: [{ name: 'description', content: 'Alamat, telepon, email, dan form kontak Wirasena & Partners.' }],
+        title: 'Kontak — Ridwan & Co.',
+        meta: [{ name: 'description', content: 'Alamat, telepon, email, dan form kontak Ridwan & Co..' }],
     })
 </script>

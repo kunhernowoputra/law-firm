@@ -9,7 +9,7 @@ export const usePraktik = () => {
             desc: 'Pendampingan hukum korporasi menyeluruh: pendirian dan restrukturisasi entitas, tata kelola perusahaan, penyusunan dan negosiasi kontrak komersial, hingga kepatuhan regulasi lintas sektor.',
             tags: ['Tata Kelola', 'Kontrak Komersial', 'Kepatuhan', 'Restrukturisasi'],
             assignees: [
-                { initials: 'AW', name: 'Arya Wirasena', role: 'Managing Partner' },
+                { initials: 'AW', name: 'Arya Ridwan', role: 'Managing Partner' },
                 { initials: 'DS', name: 'Dimas Saputra', role: 'Senior Associate' },
             ],
         },
@@ -19,7 +19,7 @@ export const usePraktik = () => {
             route: 'ma',
             desc: 'Uji tuntas hukum (legal due diligence), penataan struktur transaksi, penyusunan perjanjian jual beli saham/aset, dan negosiasi hingga penutupan transaksi.',
             tags: ['Due Diligence', 'SPA', 'Joint Venture', 'Divestasi'],
-            assignees: [{ initials: 'AW', name: 'Arya Wirasena', role: 'Managing Partner' }],
+            assignees: [{ initials: 'AW', name: 'Arya Ridwan', role: 'Managing Partner' }],
         },
         {
             no: '03',

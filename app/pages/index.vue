@@ -17,7 +17,7 @@
     const { stats, highlights, practices, attorneys, insights, testimonial, clients } = useHome()
 
     useHead({
-        title: 'Wirasena & Partners — Kantor Hukum Korporat & Litigasi',
+        title: 'Ridwan & Co. — Kantor Hukum Korporat & Litigasi',
         meta: [{ name: 'description', content: 'Firma hukum multi-praktik untuk korporasi, transaksi, dan sengketa. Nasihat hukum yang tenang, presisi, dan tepercaya.' }],
     })
 </script>
