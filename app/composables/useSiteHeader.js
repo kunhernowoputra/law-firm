@@ -8,6 +8,7 @@ export const useSiteHeader = () => {
     const navLinks = [
         { to: '/', label: 'Beranda' },
         { to: '/praktik', label: 'Area Praktik' },
+        { to: '/probono', label: 'Pro Bono' },
         { to: '/tim', label: 'Tim Advokat' },
         { to: '/kontak', label: 'Kontak' },
     ]

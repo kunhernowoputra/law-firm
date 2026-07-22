@@ -2,8 +2,7 @@
     <div>
         <HomeHero :stats="stats" />
         <HomeAbout :highlights="highlights" />
-        <hr class="wrap divider" />
-        <HomePractices :practices="practices" />
+        <HomePraktik />
         <HomeTeam :attorneys="attorneys" />
         <HomeInsights :insights="insights" />
         <HomeTestimonials :clients="clients" />
@@ -14,7 +13,7 @@
 </template>
 
 <script setup>
-    const { stats, highlights, practices, attorneys, insights, clients } = useHome()
+    const { stats, highlights, attorneys, insights, clients } = useHome()
 
     useHead({
         title: 'Ridwan & Co. — Kantor Hukum Korporat & Litigasi',
