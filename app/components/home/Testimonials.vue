@@ -1,5 +1,5 @@
 <template>
-    <section v-if="clients.length" class="section" style="background: var(--ink)" aria-labelledby="client-h">
+    <section v-if="clients.length" class="section" style="background: #14181c" aria-labelledby="client-h">
         <div class="wrap">
             <p class="eyebrow reveal" style="color: rgba(255, 255, 255, 0.55)">Client Kami</p>
             <h2 id="client-h" class="sec-head__title reveal" data-delay="1" style="color: #fff; margin-top: var(--s4); max-width: 24ch">Terima kasih atas kepercayaan yang Anda berikan dan menjadikan kami mitra hukum Anda.</h2>
