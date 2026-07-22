@@ -2,7 +2,6 @@
     <div>
         <HomeHero :stats="stats" />
         <HomeAbout :highlights="highlights" />
-        <HomePraktik />
         <HomeTeam :attorneys="attorneys" />
         <HomeInsights :insights="insights" />
         <HomeTestimonials :clients="clients" />

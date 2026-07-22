@@ -527,6 +527,62 @@
     }
 }
 
+/* practice card grid (image + invert-to-color hover) */
+.practice-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: var(--s5);
+}
+.practice-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--r);
+    overflow: hidden;
+    transition:
+        border-color 0.3s var(--ease),
+        transform 0.3s var(--ease),
+        box-shadow 0.3s var(--ease);
+}
+.practice-card:hover {
+    border-color: color-mix(in srgb, var(--accent) 40%, var(--line));
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+.practice-card__media {
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+}
+.practice-card__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(1) contrast(1.05);
+    transform: scale(1.02);
+    transition:
+        filter 0.4s var(--ease),
+        transform 0.4s var(--ease);
+}
+.practice-card:hover .practice-card__media img {
+    filter: grayscale(0) contrast(1);
+    transform: scale(1.08);
+}
+.practice-card__body {
+    padding: var(--s5);
+}
+.practice-card__name {
+    font-family: var(--font-display);
+    font-size: var(--fs-h3);
+    color: var(--ink);
+}
+.practice-card__desc {
+    display: block;
+    color: var(--ink-3);
+    margin-top: var(--s2);
+    font-size: var(--fs-sm);
+}
+
 /* attorney card */
 .attorney {
     text-align: left;
@@ -655,13 +711,6 @@
     font-size: var(--fs-sm);
     margin-top: var(--s3);
     flex: 1;
-}
-.insight__foot {
-    margin-top: var(--s4);
-    font-family: var(--font-mono);
-    font-size: var(--fs-xs);
-    color: var(--ink-4);
-    letter-spacing: 0.04em;
 }
 
 /* tags / chips */

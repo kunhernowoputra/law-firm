@@ -4,9 +4,9 @@ const TABS = [
     { key: 'perizinan', label: 'Perizinan' },
 ]
 
-// State tab section praktik di beranda (S2/S3): index aktif + navigasi keyboard.
-export const usePraktikTabs = () => {
-    const activeIndex = useState('home-praktik-active', () => 0)
+// State tab halaman Layanan: index aktif + navigasi keyboard.
+export const useLayananTabs = () => {
+    const activeIndex = useState('layanan-active', () => 0)
 
     const activeTab = computed(() => TABS[activeIndex.value])
 
