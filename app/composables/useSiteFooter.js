@@ -11,7 +11,7 @@ export const useSiteFooter = () => {
                 { label: 'Tentang', to: '/' },
                 { label: 'Tim Advokat', to: '/tim' },
                 { label: 'Area Praktik', to: '/praktik' },
-                { label: 'Karier', to: '#' },
+                { label: 'Karier', to: '/karir' },
             ],
         },
         {

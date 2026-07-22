@@ -38,6 +38,7 @@ export const useHome = () => {
         { name: 'Pasti Ada Solusi', logo: '/assets/clients/pasti-ada-solusi.jpeg' },
         { name: 'Prima Cipta Tata Abadi', logo: '/assets/clients/prima-cipta-tata-abadi.jpeg' },
         { name: 'Pule Gading', logo: '/assets/clients/pule-gading.jpeg' },
+        { name: 'Rama Citra Nada', logo: '/assets/clients/rama-citra-nada.jpeg' },
         { name: 'Wegasoft Tech Indonesia', logo: '/assets/clients/wegasoft-tech-indonesia.jpeg' },
     ]
 

@@ -7,7 +7,7 @@
         </div>
         <div class="wrap hero__inner">
             <p class="eyebrow eyebrow--accent reveal">Firma Hukum Korporasi · Jakarta</p>
-            <h1 class="hero__title reveal" data-delay="1">Layanan Hukum Berstandar Tinggi dengan Komitmen pada Integritas.</h1>
+            <h1 class="hero__title reveal uppercase" data-delay="1">Layanan Hukum Berstandar Tinggi dengan Komitmen pada Integritas.</h1>
             <p class="hero__lead reveal" data-delay="2">Kami hadir mendampingi korporasi dan lembaga keuangan dalam menangani berbagai tantangan hukum krusial. Melalui pendekatan yang terstruktur, kepentingan hukum dan kerahasiaan bisnis Anda senantiasa menjadi prioritas utama kami.</p>
             <div class="hero__actions reveal" data-delay="3">
                 <NuxtLink class="btn btn--primary" to="/konsultasi">Jadwalkan Konsultasi</NuxtLink>

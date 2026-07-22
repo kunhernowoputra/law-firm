@@ -34,6 +34,7 @@ export const useLayanan = () => {
             { name: 'Pendirian Usaha', desc: 'Pengurusan legalitas pendirian PT, CV, firma, dan bentuk badan usaha lainnya.', imageUrl: '/assets/praktik/pendirian-usaha.jpg' },
             { name: 'Pengurusan Perizinan', desc: 'Pengurusan izin usaha dan operasional melalui sistem OSS dan instansi terkait.', imageUrl: '/assets/praktik/pengurusan-perizinan.jpg' },
             { name: 'Perizinan Bidang Khusus', desc: 'Pengurusan izin sektoral dengan persyaratan khusus, seperti izin lingkungan, kesehatan, dan sektor keuangan.', imageUrl: '/assets/praktik/administrasi-negara.jpg' },
+            { name: 'Layanan Notaris & PPAT', desc: 'Kami membantu individu maupun badan usaha dalam memastikan setiap transaksi dan tindakan hukum dilakukan secara sah, tertib administrasi, serta memberikan kepastian hukum.', imageUrl: '/assets/praktik/notaris-ppat.jpg' },
         ],
     }
 

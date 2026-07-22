@@ -1421,9 +1421,40 @@
     border-color: var(--ink-4);
     color: var(--ink);
 }
+.icon-btn:active {
+    transform: scale(0.92);
+}
 .icon-btn svg {
     width: 18px;
     height: 18px;
+}
+.theme-toggle {
+    position: relative;
+    overflow: hidden;
+}
+.theme-toggle__icon {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    transition:
+        transform 0.45s var(--ease),
+        opacity 0.35s var(--ease);
+}
+.theme-toggle__icon--moon {
+    opacity: 0;
+    transform: rotate(45deg) scale(0.4);
+}
+.theme-toggle__icon--sun {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+.theme-toggle.is-dark .theme-toggle__icon--moon {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+.theme-toggle.is-dark .theme-toggle__icon--sun {
+    opacity: 0;
+    transform: rotate(-45deg) scale(0.4);
 }
 .portal__body {
     padding: var(--s6);
