@@ -408,13 +408,20 @@
     background: linear-gradient(to right, transparent 0, transparent calc(100% - 44%), var(--bg) 100%), repeating-linear-gradient(90deg, transparent 0 46px, color-mix(in srgb, var(--ink) 6%, transparent) 46px 47px);
     mask-image: linear-gradient(to right, transparent 40%, #000 100%);
 }
+.hero__statue {
+    position: absolute;
+    inset: 0;
+    background-image: url('/assets/hero/justice-statue.jpg');
+    background-size: cover;
+    background-position: right center;
+    opacity: 0.85;
+    mask-image: linear-gradient(to right, transparent 0, transparent 42%, #000 96%);
+}
 .hero__grad {
     position: absolute;
     inset: 0;
     background: radial-gradient(120% 90% at 88% -10%, color-mix(in srgb, var(--accent) 12%, transparent), transparent 55%), radial-gradient(80% 80% at 100% 100%, color-mix(in srgb, var(--ink) 5%, transparent), transparent 60%);
-}
-
-/* ---------- Section heading ---------- */
+} /* ---------- Section heading ---------- */
 .sec-head {
     display: flex;
     align-items: flex-end;

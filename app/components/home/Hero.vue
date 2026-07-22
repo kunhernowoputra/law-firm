@@ -1,6 +1,7 @@
 <template>
     <section class="hero">
         <div class="hero__bg" aria-hidden="true">
+            <div class="hero__statue" />
             <div class="hero__grad" />
             <div class="facade" />
         </div>
