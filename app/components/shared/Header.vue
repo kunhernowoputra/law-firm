@@ -7,6 +7,7 @@
                     <NuxtLink v-for="link in navLinks" :key="link.to" :to="link.to">{{ link.label }}</NuxtLink>
                 </nav>
                 <div class="header-actions">
+                    <SharedThemeToggle />
                     <NuxtLink class="btn btn--ghost btn--sm" to="/portal/login">Portal Klien</NuxtLink>
                     <NuxtLink class="btn btn--primary btn--sm" to="/konsultasi">Konsultasi</NuxtLink>
                     <button class="nav-toggle" aria-label="Buka menu" :aria-expanded="String(isDrawerOpen)" aria-controls="mnav" @click="toggleDrawer">

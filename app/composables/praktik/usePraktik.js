@@ -1,4 +1,4 @@
-// Data area praktik (mock FE). Edge: area tanpa advokat (unassigned) tetap tampil + CTA konsultasi umum.
+// Data area praktik (mock FE).
 // TODO: wire backend — ganti mock dengan useFetch ke endpoint area praktik.
 export const usePraktik = () => {
     const areas = [
@@ -8,10 +8,6 @@ export const usePraktik = () => {
             route: 'korporat',
             desc: 'Pendampingan hukum korporasi menyeluruh: pendirian dan restrukturisasi entitas, tata kelola perusahaan, penyusunan dan negosiasi kontrak komersial, hingga kepatuhan regulasi lintas sektor.',
             tags: ['Tata Kelola', 'Kontrak Komersial', 'Kepatuhan', 'Restrukturisasi'],
-            assignees: [
-                { initials: 'AW', name: 'Arya Ridwan', role: 'Managing Partner' },
-                { initials: 'DS', name: 'Dimas Saputra', role: 'Senior Associate' },
-            ],
         },
         {
             no: '02',
@@ -19,7 +15,6 @@ export const usePraktik = () => {
             route: 'ma',
             desc: 'Uji tuntas hukum (legal due diligence), penataan struktur transaksi, penyusunan perjanjian jual beli saham/aset, dan negosiasi hingga penutupan transaksi.',
             tags: ['Due Diligence', 'SPA', 'Joint Venture', 'Divestasi'],
-            assignees: [{ initials: 'AW', name: 'Arya Ridwan', role: 'Managing Partner' }],
         },
         {
             no: '03',
@@ -27,7 +22,6 @@ export const usePraktik = () => {
             route: 'pajak',
             desc: 'Perencanaan pajak yang efisien dan patuh, pendampingan pemeriksaan, keberatan, hingga banding di Pengadilan Pajak.',
             tags: ['Tax Planning', 'Sengketa Pajak', 'Transfer Pricing'],
-            assignees: [{ initials: 'RP', name: 'Raka Pramudya', role: 'Partner — Perpajakan' }],
         },
         {
             no: '04',
@@ -35,7 +29,6 @@ export const usePraktik = () => {
             route: 'ip',
             desc: 'Pendaftaran dan pengelolaan merek, paten, hak cipta, perjanjian lisensi, serta penegakan hak terhadap pelanggaran.',
             tags: ['Merek', 'Paten', 'Lisensi', 'Penegakan'],
-            assignees: [{ initials: 'NF', name: 'Nadia Firdaus', role: 'Associate — IP' }],
         },
         {
             no: '05',
@@ -43,7 +36,6 @@ export const usePraktik = () => {
             route: 'kerja',
             desc: 'Hubungan industrial, penyusunan Perjanjian Kerja Bersama, penanganan PHK, dan penyelesaian perselisihan di Pengadilan Hubungan Industrial.',
             tags: ['PKB', 'PHK', 'PHI'],
-            assignees: [],
         },
         {
             no: '06',
@@ -51,7 +43,6 @@ export const usePraktik = () => {
             route: 'litigasi',
             desc: 'Perwakilan dalam sengketa komersial di pengadilan negeri, kasasi, hingga arbitrase institusional (BANI) dan internasional.',
             tags: ['Sengketa Komersial', 'Arbitrase', 'Eksekusi'],
-            assignees: [{ initials: 'LK', name: 'Laksmi Kusuma', role: 'Partner — Litigasi' }],
         },
     ]
 

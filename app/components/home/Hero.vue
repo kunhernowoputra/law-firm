@@ -5,9 +5,9 @@
             <div class="facade" />
         </div>
         <div class="wrap hero__inner">
-            <p class="eyebrow eyebrow--accent reveal">Firma Hukum Multi-Praktik · Jakarta</p>
-            <h1 class="hero__title reveal" data-delay="1">Nasihat hukum yang <em>tenang</em>, presisi, dan tepercaya.</h1>
-            <p class="hero__lead reveal" data-delay="2">Kami mendampingi korporasi, institusi keuangan, dan pemilik usaha melewati transaksi paling kompleks hingga sengketa paling menuntut — dengan kerahasiaan yang kami jaga tanpa kompromi.</p>
+            <p class="eyebrow eyebrow--accent reveal">Firma Hukum Korporasi · Jakarta</p>
+            <h1 class="hero__title reveal" data-delay="1">Layanan Hukum Berstandar Tinggi dengan Komitmen pada Integritas.</h1>
+            <p class="hero__lead reveal" data-delay="2">Kami hadir mendampingi korporasi dan lembaga keuangan dalam menangani berbagai tantangan hukum krusial. Melalui pendekatan yang terstruktur, kepentingan hukum dan kerahasiaan bisnis Anda senantiasa menjadi prioritas utama kami.</p>
             <div class="hero__actions reveal" data-delay="3">
                 <NuxtLink class="btn btn--primary" to="/konsultasi">Jadwalkan Konsultasi</NuxtLink>
                 <NuxtLink class="btn btn--outline" to="/praktik">Area Praktik Kami</NuxtLink>

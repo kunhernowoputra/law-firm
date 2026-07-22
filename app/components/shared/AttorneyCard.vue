@@ -7,7 +7,7 @@
         </div>
         <h3 class="attorney__name">{{ name }}</h3>
         <p class="attorney__role">{{ role }}</p>
-        <p class="attorney__meta">{{ meta }}</p>
+        <p v-if="meta" class="attorney__meta">{{ meta }}</p>
     </article>
 </template>
 
@@ -16,7 +16,7 @@
         name: { type: String, required: true },
         initials: { type: String, required: true },
         role: { type: String, required: true },
-        meta: { type: String, required: true },
+        meta: { type: String, default: '' },
         isNew: { type: Boolean, default: false },
         photoUrl: { type: String, default: '' },
         delay: { type: Number, default: 0 },

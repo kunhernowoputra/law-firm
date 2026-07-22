@@ -4,9 +4,12 @@
             <div v-if="!isSlim" class="footer-grid">
                 <div class="footer-col footer-about">
                     <SharedBrand plain />
-                    <p>Menara Sudirman Lt. 21, Jl. Jend. Sudirman Kav. 60, Jakarta Selatan 12190, Indonesia.</p>
+                    <p>Puri Beta 1, Town Center, Lot 7 No. 10, RT 004 / RW 012, Kel. Larangan Utara, Kec. Larangan, Kota Tangerang, Banten 15154.</p>
                     <p style="margin-top: var(--s3)">
-                        <a href="tel:+62212505050">+62 21 250 5050</a> ·
+                        <a href="https://wa.me/6285691248221">+62 856-9124-8221</a> ·
+                        <a href="https://wa.me/6288212219215">+62 882-1221-9215</a>
+                    </p>
+                    <p style="margin-top: var(--s2)">
                         <a href="mailto:rncolawoffice@gmail.com">rncolawoffice@gmail.com</a>
                     </p>
                 </div>
@@ -19,8 +22,7 @@
             <SharedConfidential :style="isSlim ? 'margin-top:0' : undefined" />
 
             <div class="footer-legal">
-                <span>© 2026 Ridwan & Co.. Terdaftar pada PERADI.</span>
-                <span>Dirancang dengan restraint · Jakarta</span>
+                <span>© 2026 Ridwan & Co.</span>
             </div>
         </div>
     </footer>

@@ -2,10 +2,10 @@
 // TODO: wire backend — ganti mock dengan useFetch/useAsyncData ke endpoint konten publik.
 export const useHome = () => {
     const stats = [
-        { value: '2004', label: 'Tahun berdiri' },
-        { value: '14', label: 'Advokat & konsultan' },
-        { value: '6', label: 'Area praktik' },
-        { value: '420+', label: 'Mandat terselesaikan' },
+        { value: '2025', label: 'Tahun berdiri' },
+        { value: '7', label: 'Advokat & konsultan' },
+        { value: '6', label: 'Area praktik utama' },
+        { value: '81+', label: 'Perkara terselesaikan' },
     ]
 
     const highlights = [
@@ -25,10 +25,10 @@ export const useHome = () => {
     ]
 
     const attorneys = [
-        { name: 'Arya Ridwan, S.H., LL.M.', initials: 'AW', role: 'Managing Partner', meta: 'Korporat · M&A · 22 thn', photoUrl: '/assets/team/arya-ridwan.jpg' },
-        { name: 'Laksmi Kusuma, S.H.', initials: 'LK', role: 'Partner — Litigasi', meta: 'Litigasi · Arbitrase · 17 thn', photoUrl: '/assets/team/laksmi-kusuma.jpg' },
-        { name: 'Raka Pramudya, S.H., M.H.', initials: 'RP', role: 'Partner — Perpajakan', meta: 'Pajak · Kepatuhan · 15 thn', photoUrl: '/assets/team/raka-pramudya.jpg' },
-        { name: 'Nadia Firdaus, S.H.', initials: 'NF', role: 'Associate — IP', meta: 'Kekayaan Intelektual · 4 thn', isNew: true, photoUrl: '/assets/team/nadia-firdaus.jpg' },
+        { name: 'Mohamad Ridwan, S.H., M.Kn.', initials: 'MR', role: 'Managing Partner' },
+        { name: 'Novan Rizky Martunus, S.H.', initials: 'NM', role: 'Partner' },
+        { name: 'Muhammad Fajar Sidik, S.H.', initials: 'MS', role: 'Partner' },
+        { name: 'Chairani Azifah, S.H., M.Kn.', initials: 'CA', role: 'Partner' },
     ]
 
     const insights = [
@@ -37,11 +37,6 @@ export const useHome = () => {
         { category: 'Ketenagakerjaan', title: 'Menyusun PKB yang Tahan Uji di PHI', excerpt: 'Klausul-klausul kritis dalam Perjanjian Kerja Bersama yang sering menjadi titik sengketa.', date: '15 Mei 2026', readMinutes: 5, imageUrl: '/assets/insights/pkb-ketenagakerjaan.jpg' },
     ]
 
-    const testimonial = {
-        quote: 'Ridwan & Co. menangani akuisisi kami dengan ketenangan yang jarang. Dokumentasi tertib, komunikasi jelas, dan tidak sekalipun kerahasiaan kami terganggu.',
-        byRole: 'Direktur Utama',
-        byDetail: 'Perusahaan energi terbuka (nama dirahasiakan atas permintaan)',
-    }
     const clients = [
         { name: 'Alhasanah Berkah Bersama', logo: '/assets/clients/alhasanah-berkah-bersama.jpeg' },
         { name: 'Delta Flow Indonesia', logo: '/assets/clients/delta-flow-indonesia.jpeg' },
@@ -55,5 +50,5 @@ export const useHome = () => {
         { name: 'Wegasoft Tech Indonesia', logo: '/assets/clients/wegasoft-tech-indonesia.jpeg' },
     ]
 
-    return { stats, highlights, practices, attorneys, insights, testimonial, clients }
+    return { stats, highlights, practices, attorneys, insights, clients }
 }

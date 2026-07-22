@@ -3,7 +3,7 @@
         <section class="section--tight wrap" style="padding-top: var(--s8)">
             <p class="eyebrow reveal">Area Praktik</p>
             <h1 class="reveal" data-delay="1" style="font-size: var(--fs-h1); max-width: 20ch; margin-top: var(--s4)">Keahlian yang dalam di enam bidang inti.</h1>
-            <p class="reveal prose" data-delay="2" style="margin-top: var(--s4); color: var(--ink-3)">Setiap area dipimpin advokat spesialis dengan rekam jejak di industri klien kami. Pilih area untuk memulai konsultasi yang langsung diarahkan ke tim yang tepat.</p>
+            <p class="reveal prose" data-delay="2" style="margin-top: var(--s4); color: var(--ink-3)">Enam bidang praktik inti yang mendukung kebutuhan hukum korporasi dan institusi. Pilih area untuk memulai konsultasi yang langsung diarahkan ke tim yang tepat.</p>
         </section>
 
         <section class="wrap" style="padding-bottom: var(--s9)">

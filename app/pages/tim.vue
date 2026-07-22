@@ -3,7 +3,7 @@
         <section class="section--tight wrap" style="padding-top: var(--s8)">
             <p class="eyebrow reveal">Tim</p>
             <h1 class="reveal" data-delay="1" style="font-size: var(--fs-h1); max-width: 22ch; margin-top: var(--s4)">Advokat dan konsultan di balik setiap mandat.</h1>
-            <p class="reveal prose" data-delay="2" style="margin-top: var(--s4); color: var(--ink-3)">Empat belas profesional lintas disiplin. Setiap profil menampilkan spesialisasi, pengalaman, dan area praktik terkait.</p>
+            <p class="reveal prose" data-delay="2" style="margin-top: var(--s4); color: var(--ink-3)">Tujuh profesional lintas disiplin yang menangani setiap mandat klien.</p>
         </section>
 
         <section class="wrap" style="padding-bottom: var(--s9)">

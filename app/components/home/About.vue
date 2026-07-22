@@ -3,12 +3,12 @@
         <div class="grid grid--2" style="align-items: start; gap: var(--s8)">
             <div class="reveal">
                 <p class="eyebrow">Tentang Firma</p>
-                <h2 id="profil-h" class="sec-head__title" style="margin-top: var(--s4); font-size: var(--fs-h1)">Dibangun di atas kredibilitas, bukan kebisingan.</h2>
+                <h2 id="profil-h" class="sec-head__title" style="margin-top: var(--s4); font-size: var(--fs-h1)">Menghadirkan Kepastian Hukum Melalui Pendekatan Strategis dan Tepercaya.</h2>
             </div>
             <div class="reveal" data-delay="1">
                 <div class="prose">
-                    <p>Ridwan & Co. adalah firma hukum menengah yang berdiri sejak 2004. Kami percaya bahwa nasihat hukum terbaik lahir dari ketelitian, pemahaman industri klien, dan penghormatan mutlak terhadap kerahasiaan.</p>
-                    <p>Setiap mandat ditangani oleh tim yang dipimpin advokat senior, dengan jalur komunikasi yang jelas dan dokumentasi yang tertib melalui portal klien kami.</p>
+                    <p>Ridwan & Co. hadir mendampingi pelaku usaha dan institusi dalam mengelola risiko serta menyelesaikan berbagai tantangan hukum yang kompleks. Pendekatan kami berfokus pada ketepatan analisis hukum dan pemahaman menyeluruh terhadap kebutuhan bisnis klien.</p>
+                    <p>Seluruh layanan hukum kami ditangani oleh tim profesional di bawah pengawasan Advokat Senior, dengan sistem komunikasi yang jelas dan tata kelola dokumentasi yang tertib serta terintegrasi.</p>
                 </div>
                 <div class="grid grid--2" style="margin-top: var(--s6); gap: var(--s5)">
                     <div v-for="item in highlights" :key="item.title">

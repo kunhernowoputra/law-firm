@@ -22,8 +22,8 @@ export const useDashboard = () => {
             { date: 'Mendatang', title: 'Penandatanganan & Closing', desc: 'Eksekusi transaksi dan pemenuhan condition precedent.', state: 'upcoming' },
         ],
         advokat: [
-            { initials: 'AW', name: 'Arya Ridwan', role: 'Managing Partner · M&A' },
-            { initials: 'DS', name: 'Dimas Saputra', role: 'Senior Associate' },
+            { initials: 'MR', name: 'Mohamad Ridwan', role: 'Managing Partner · M&A' },
+            { initials: 'MA', name: 'Muhammad Qeis Aslam', role: 'Associate' },
         ],
     }
 
