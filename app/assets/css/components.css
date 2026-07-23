@@ -411,7 +411,7 @@
 .hero__statue {
     position: absolute;
     inset: 0;
-    background-image: url('/assets/hero/justice-statue.jpg');
+    background-image: url('/assets/hero/justice-statue.webp');
     background-size: cover;
     background-position: right center;
     opacity: 0.85;

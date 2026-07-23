@@ -2,7 +2,7 @@
     <aside class="auth__aside">
         <div class="facade" aria-hidden="true" />
         <NuxtLink class="brand" to="/" style="color: #fff">
-            <img class="brand__mark" src="/assets/logo.jpeg" alt="" aria-hidden="true" width="30" height="30" />
+            <NuxtImg class="brand__mark" src="/assets/logo.webp" alt="" aria-hidden="true" width="30" height="30" />
             <span class="brand__name" style="color: #fff">Ridwan<span style="color: #8fb6e6">&nbsp;&amp;</span> Co.</span>
         </NuxtLink>
         <blockquote class="auth__quote">"Visibilitas penuh atas kasus Anda — kapan pun, dengan kerahasiaan yang terjaga."</blockquote>

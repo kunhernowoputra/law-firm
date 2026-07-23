@@ -41,7 +41,7 @@
     /* type */
     --font-display: 'Newsreader', Georgia, 'Times New Roman', serif;
     --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-    --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', monospace;
+    --font-mono: ui-monospace, 'SFMono-Regular', 'Menlo', 'Consolas', monospace;
 
     --fs-display: clamp(2.7rem, 6vw, 4.75rem);
     --fs-h1: clamp(2rem, 4vw, 3rem);

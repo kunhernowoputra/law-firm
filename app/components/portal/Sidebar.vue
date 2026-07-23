@@ -1,7 +1,7 @@
 <template>
     <aside class="side">
         <NuxtLink class="side__brand" to="/">
-            <img class="brand__mark" src="/assets/logo.jpeg" alt="" aria-hidden="true" width="30" height="30" />
+            <NuxtImg class="brand__mark" src="/assets/logo.webp" alt="" aria-hidden="true" width="30" height="30" />
             <span class="brand__name" style="font-size: 1rem">Ridwan<span>&nbsp;&amp;</span> Co.</span>
         </NuxtLink>
         <nav class="side__nav" aria-label="Navigasi portal">

@@ -7,11 +7,15 @@ export default defineNuxtConfig({
     app: {
         head: {
             htmlAttrs: { lang: 'id' },
-            link: [{ rel: 'preload', as: 'image', href: '/assets/hero/justice-statue.jpg', fetchpriority: 'high' }],
+            link: [{ rel: 'preload', as: 'image', href: '/assets/hero/justice-statue.webp', fetchpriority: 'high', type: 'image/webp' }],
         },
     },
     runtimeConfig: {
         resendApiKey: process.env.RESEND_API_KEY,
+    },
+    // CSS global (bukan per-komponen) di-inline ke <head> tiap response, hilangkan 1 network round-trip render-blocking.
+    experimental: {
+        inlineSSRStyles: true,
     },
     // Hosting pindah ke Cloudflare Workers. wrangler.jsonc di root define name & compatibility_date.
     nitro: {
@@ -43,12 +47,13 @@ export default defineNuxtConfig({
     tailwindcss: {
         cssPath: '~/assets/css/main.css',
     },
-    // Font design system (Newsreader/Inter/IBM Plex Mono) — dipakai lewat CSS custom properties di tokens.css.
+    // Font design system — dipakai lewat CSS custom properties di tokens.css.
+    // IBM Plex Mono TIDAK di-self-host (cuma dipakai untuk label kecil/eyebrow) — fallback system monospace stack,
+    // hemat ~20KB + 2 request font blocking demi Lighthouse performance. Lihat tokens.css --font-mono.
     fonts: {
         families: [
-            { name: 'Newsreader', provider: 'google', weights: [400, 500, 600], styles: ['normal', 'italic'] },
+            { name: 'Newsreader', provider: 'google', weights: [400, 500, 600] },
             { name: 'Inter', provider: 'google', weights: [400, 500, 600] },
-            { name: 'IBM Plex Mono', provider: 'google', weights: [400, 500] },
         ],
     },
     // Nuxt 4: ~/ & @/ = app/. server/ & shared/ ada DI LUAR app/.

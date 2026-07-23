@@ -2,7 +2,7 @@
     <article class="attorney reveal" :data-delay="delay || undefined">
         <div class="attorney__avatar">
             <span v-if="isNew" class="tag attorney__badge">Baru</span>
-            <img v-if="photoUrl" :src="photoUrl" :alt="name" />
+            <NuxtImg v-if="photoUrl" :src="photoUrl" :alt="name" width="400" height="500" loading="lazy" />
             <span v-else class="attorney__initials">{{ initials }}</span>
         </div>
         <h3 class="attorney__name">{{ name }}</h3>

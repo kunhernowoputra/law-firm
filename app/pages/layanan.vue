@@ -16,7 +16,7 @@
             <div :id="`layanan-panel-${activeTab.key}`" class="practice-grid reveal" data-delay="2" role="tabpanel" :aria-labelledby="`layanan-tab-${activeTab.key}`" style="margin-top: var(--s6)">
                 <article v-for="item in practiceAreas[activeTab.key]" :key="item.name" class="practice-card">
                     <div class="practice-card__media">
-                        <img :src="item.imageUrl" :alt="item.name" loading="lazy" />
+                        <NuxtImg :src="item.imageUrl" :alt="item.name" width="480" height="360" loading="lazy" />
                     </div>
                     <div class="practice-card__body">
                         <h3 class="practice-card__name">{{ item.name }}</h3>
