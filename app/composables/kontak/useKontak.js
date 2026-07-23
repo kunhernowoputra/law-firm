@@ -1,5 +1,3 @@
-const SUBMIT_DELAY = 1400
-
 // Form kontak (S5): model + validasi boundary FE + double-submit guard + toast sukses.
 export const useKontak = () => {
     const { showToast } = useToast()
@@ -28,16 +26,19 @@ export const useKontak = () => {
         form.pesan = ''
     }
 
-    const submit = () => {
+    const submit = async () => {
         if (isSubmitting.value) return
         if (!validateAll()) return
         isSubmitting.value = true
-        // TODO: wire backend — POST pesan kontak ke endpoint; ganti simulasi delay ini.
-        setTimeout(() => {
-            isSubmitting.value = false
+        try {
+            await $fetch('/api/kontak', { method: 'POST', body: { ...form } })
             reset()
             showToast('Pesan terkirim. Kami akan membalas dalam 1×24 jam kerja.')
-        }, SUBMIT_DELAY)
+        } catch {
+            showToast('Gagal mengirim pesan. Silakan coba lagi.')
+        } finally {
+            isSubmitting.value = false
+        }
     }
 
     return { form, errors, isSubmitting, clearError, validateEmailBlur, submit }

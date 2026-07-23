@@ -1,5 +1,3 @@
-const SUBMIT_DELAY = 1400
-
 // Kategori masalah → area praktik (routing S6). value selaras dgn query dari halaman praktik.
 const CATEGORIES = [
     { value: 'korporat', title: 'Pendirian / Kontrak', sub: 'Korporat & Komersial', routeName: 'Korporat & Komersial' },
@@ -27,6 +25,7 @@ const SLOTS = [{ time: '09:00' }, { time: '10:00' }, { time: '11:00', disabled: 
 // State via useState (SSR-safe, dibagi antar step component).
 export const useKonsultasi = () => {
     const route = useRoute()
+    const { showToast } = useToast()
 
     const step = useState('konsul-step', () => 1)
     const form = useState('konsul-form', () => ({
@@ -85,20 +84,23 @@ export const useKonsultasi = () => {
         errors.value.slot = false
     }
 
-    const submit = () => {
+    const submit = async () => {
         const slotOk = form.value.pickedDay && form.value.pickedSlot
         errors.value.slot = !slotOk
         errors.value.consent = slotOk ? !form.value.consent : false
         if (!slotOk || !form.value.consent) return
         if (isSubmitting.value) return
         isSubmitting.value = true
-        // TODO: wire backend — POST konsultasi + booking; kirim email konfirmasi jadwal.
-        setTimeout(() => {
-            isSubmitting.value = false
+        try {
+            await $fetch('/api/konsultasi', { method: 'POST', body: { ...form.value } })
             scheduledWhen.value = `${form.value.pickedDay} · ${form.value.pickedSlot} WIB`
             isDone.value = true
             scrollTop()
-        }, SUBMIT_DELAY)
+        } catch {
+            showToast('Gagal mengirim booking. Silakan coba lagi.')
+        } finally {
+            isSubmitting.value = false
+        }
     }
 
     return { categories: CATEGORIES, days: DAYS, slots: SLOTS, step, form, errors, isSubmitting, isDone, routeName, scheduledWhen, next, prev, clearError, pickDay, pickSlot, submit }

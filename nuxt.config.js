@@ -4,6 +4,9 @@ import { fileURLToPath } from 'node:url'
 export default defineNuxtConfig({
     compatibilityDate: '2025-01-01',
     devtools: { enabled: true },
+    runtimeConfig: {
+        resendApiKey: process.env.RESEND_API_KEY,
+    },
     // Hosting pindah ke Cloudflare Workers. wrangler.jsonc di root define name & compatibility_date.
     nitro: {
         preset: 'cloudflare_module',
