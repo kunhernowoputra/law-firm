@@ -4,6 +4,10 @@ import { fileURLToPath } from 'node:url'
 export default defineNuxtConfig({
     compatibilityDate: '2025-01-01',
     devtools: { enabled: true },
+    // Hosting pindah ke Cloudflare Workers. wrangler.jsonc di root define name & compatibility_date.
+    nitro: {
+        preset: 'cloudflare_module',
+    },
     modules: ['@nuxtjs/tailwindcss', '@nuxt/fonts', '@nuxt/icon', '@nuxt/image', '@nuxt/eslint', '@nuxtjs/sitemap'],
     // Domain belum dibeli saat ini (ridwanco.com direncanakan) — override via env NUXT_PUBLIC_SITE_URL saat sudah live.
     site: {

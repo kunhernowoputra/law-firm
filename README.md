@@ -36,11 +36,18 @@ npm run generate   # build static (kalau full-static)
 npm run preview    # preview build production secara lokal
 ```
 
-Deploy ke Vercel (project sudah linked, lihat `.vercel/project.json`). Push ke branch `main` untuk trigger deploy production.
+Hosting pindah ke **Cloudflare Workers** (preset Nitro `cloudflare_module`, config di `wrangler.jsonc`). `.vercel/project.json` masih ada sebagai sisa setup lama, sudah tidak dipakai.
+
+```bash
+npm run cf:preview  # wrangler dev — preview lokal pakai runtime Cloudflare
+npm run cf:deploy   # build lalu wrangler deploy ke production
+```
+
+Sebelum deploy pertama kali: `npx wrangler login` untuk connect ke akun Cloudflare.
 
 ### Environment Variables
 
-Salin `.env.example` → `.env` untuk local dev. Variabel production di-set lewat dashboard Vercel:
+Salin `.env.example` → `.env` untuk local dev. Variabel production di-set lewat dashboard Cloudflare (Workers & Pages → Settings → Variables) atau `wrangler.jsonc` (`vars`) untuk yang non-sensitif:
 
 | Variable               | Wajib? | Keterangan                                                                          |
 | ---------------------- | ------ | ----------------------------------------------------------------------------------- |

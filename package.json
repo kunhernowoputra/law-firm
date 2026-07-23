@@ -7,6 +7,8 @@
         "dev": "nuxt dev",
         "generate": "nuxt generate",
         "preview": "nuxt preview",
+        "cf:preview": "wrangler dev",
+        "cf:deploy": "npm run build && wrangler deploy",
         "postinstall": "nuxt prepare && prisma generate",
         "prepare": "husky",
         "lint": "eslint .",
@@ -43,7 +45,8 @@
         "lint-staged": "^17.1.0",
         "prettier": "^3.9.5",
         "prisma": "^6.19.3",
-        "vitest": "^4.1.10"
+        "vitest": "^4.1.10",
+        "wrangler": "^4.113.0"
     },
     "lint-staged": {
         "*.{js,mjs,vue}": [
