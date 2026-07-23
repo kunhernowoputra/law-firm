@@ -20,8 +20,8 @@
 
     const { isDone } = useKonsultasi()
 
-    useHead({
+    useSeo({
         title: 'Konsultasi & Booking — Ridwan & Co.',
-        meta: [{ name: 'description', content: 'Ajukan konsultasi hukum dan pilih jadwal. Masalah Anda dirutekan otomatis ke area praktik yang sesuai.' }],
+        description: 'Ajukan konsultasi hukum dan pilih jadwal. Masalah Anda dirutekan otomatis ke area praktik yang sesuai.',
     })
 </script>

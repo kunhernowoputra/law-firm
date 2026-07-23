@@ -18,8 +18,8 @@
 <script setup>
     definePageMeta({ footerVariant: 'slim' })
 
-    useHead({
+    useSeo({
         title: 'Kontak — Ridwan & Co.',
-        meta: [{ name: 'description', content: 'Alamat, WhatsApp, email, dan form kontak Ridwan & Co..' }],
+        description: 'Alamat, WhatsApp, email, dan form kontak Ridwan & Co..',
     })
 </script>

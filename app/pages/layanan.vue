@@ -36,8 +36,8 @@
     const { practiceAreas } = useLayanan()
     const { tabs, activeIndex, activeTab, selectTab, selectNext, selectPrev } = useLayananTabs()
 
-    useHead({
+    useSeo({
         title: 'Layanan — Ridwan & Co.',
-        meta: [{ name: 'description', content: 'Layanan lengkap kami: bidang keahlian hukum, pendampingan litigasi, dan pengurusan perizinan usaha.' }],
+        description: 'Layanan lengkap kami: bidang keahlian hukum, pendampingan litigasi, dan pengurusan perizinan usaha.',
     })
 </script>

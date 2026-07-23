@@ -54,8 +54,8 @@
 <script setup>
     const { values, qualifications, steps, email, mailtoHref } = useKarir()
 
-    useHead({
+    useSeo({
         title: 'Karier — Ridwan & Co.',
-        meta: [{ name: 'description', content: 'Bergabung dengan tim Ridwan & Co. — kenapa bergabung, kualifikasi yang kami cari, dan cara mengirim lamaran.' }],
+        description: 'Bergabung dengan tim Ridwan & Co. — kenapa bergabung, kualifikasi yang kami cari, dan cara mengirim lamaran.',
     })
 </script>

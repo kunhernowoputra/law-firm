@@ -19,8 +19,8 @@
 <script setup>
     const { areas } = usePraktik()
 
-    useHead({
+    useSeo({
         title: 'Area Praktik — Ridwan & Co.',
-        meta: [{ name: 'description', content: 'Enam area praktik: Korporat, M&A, Perpajakan, Kekayaan Intelektual, Ketenagakerjaan, dan Litigasi & Arbitrase.' }],
+        description: 'Enam area praktik: Korporat, M&A, Perpajakan, Kekayaan Intelektual, Ketenagakerjaan, dan Litigasi & Arbitrase.',
     })
 </script>

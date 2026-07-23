@@ -22,8 +22,8 @@
 <script setup>
     const { attorneys, total } = useTim()
 
-    useHead({
+    useSeo({
         title: 'Tim Advokat — Ridwan & Co.',
-        meta: [{ name: 'description', content: 'Profil advokat dan konsultan hukum Ridwan & Co..' }],
+        description: 'Profil advokat dan konsultan hukum Ridwan & Co..',
     })
 </script>

@@ -8,4 +8,11 @@
         "directory": "./.output/public",
         "binding": "ASSETS",
     },
+    "routes": [
+        { "pattern": "ridwanco.com", "custom_domain": true },
+        { "pattern": "www.ridwanco.com", "custom_domain": true },
+    ],
+    "vars": {
+        "NUXT_PUBLIC_SITE_URL": "https://ridwanco.com",
+    },
 }

@@ -24,8 +24,8 @@
 <script setup>
     const { program, eligibility, areas, tiles, whatsappHref } = useProbono()
 
-    useHead({
+    useSeo({
         title: 'Pro Bono — Ridwan & Co.',
-        meta: [{ name: 'description', content: 'Program bantuan hukum cuma-cuma Ridwan & Co. — syarat kelayakan, area yang dibantu, dan cara mengajukan via WhatsApp.' }],
+        description: 'Program bantuan hukum cuma-cuma Ridwan & Co. — syarat kelayakan, area yang dibantu, dan cara mengajukan via WhatsApp.',
     })
 </script>
