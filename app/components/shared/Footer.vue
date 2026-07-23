@@ -14,7 +14,7 @@
                     </p>
                 </div>
                 <div v-for="col in footerCols" :key="col.title" class="footer-col">
-                    <h4>{{ col.title }}</h4>
+                    <p>{{ col.title }}</p>
                     <NuxtLink v-for="item in col.links" :key="item.label" :to="item.to">{{ item.label }}</NuxtLink>
                 </div>
             </div>

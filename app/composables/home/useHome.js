@@ -19,7 +19,7 @@ export const useHome = () => {
         { name: 'Mohamad Ridwan, S.H., M.Kn.', initials: 'MR', role: 'Managing Partner', photoUrl: '/assets/advocat/ridwan.jpeg' },
         { name: 'Ratna Dilah', initials: 'RD', role: 'Manager Finance', photoUrl: '/assets/advocat/ratna.jpeg' },
         { name: 'Muhammad Fajar Sidik, S.H.', initials: 'MS', role: 'Partner', photoUrl: '/assets/advocat/muhammad.jpeg' },
-        { name: 'Chairani Azifah, S.H., M.Kn.', initials: 'CA', role: 'Partner', photoUrl: '/assets/advocat/chairani.png' },
+        { name: 'Chairani Azifah, S.H., M.Kn.', initials: 'CA', role: 'Partner', photoUrl: '/assets/advocat/chairani.jpeg' },
     ]
 
     const insights = [

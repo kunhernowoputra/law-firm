@@ -4,6 +4,12 @@ import { fileURLToPath } from 'node:url'
 export default defineNuxtConfig({
     compatibilityDate: '2025-01-01',
     devtools: { enabled: true },
+    app: {
+        head: {
+            htmlAttrs: { lang: 'id' },
+            link: [{ rel: 'preload', as: 'image', href: '/assets/hero/justice-statue.jpg', fetchpriority: 'high' }],
+        },
+    },
     runtimeConfig: {
         resendApiKey: process.env.RESEND_API_KEY,
     },

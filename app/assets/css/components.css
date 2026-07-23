@@ -1165,7 +1165,7 @@
         grid-template-columns: 1fr;
     }
 }
-.footer-col h4 {
+.footer-col p {
     font-family: var(--font-mono);
     font-size: var(--fs-xs);
     text-transform: uppercase;
@@ -1226,7 +1226,7 @@
     flex-wrap: wrap;
     gap: var(--s4);
     font-size: var(--fs-xs);
-    color: var(--ink-4);
+    color: var(--ink-3);
     font-family: var(--font-mono);
     letter-spacing: 0.03em;
 }
