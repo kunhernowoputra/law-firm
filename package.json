@@ -24,6 +24,7 @@
         "@nuxt/fonts": "^0.14.0",
         "@nuxt/icon": "^2.3.1",
         "@nuxt/image": "^2.0.0",
+        "@nuxtjs/sitemap": "^8.3.0",
         "@nuxtjs/tailwindcss": "^6.14.0",
         "@prisma/client": "^6.19.3",
         "eslint": "^10.7.0",
@@ -33,6 +34,7 @@
         "zod": "^4.4.3"
     },
     "devDependencies": {
+        "@nuxt/eslint": "^1.16.0",
         "@nuxt/test-utils": "^4.0.3",
         "@vue/test-utils": "^2.4.11",
         "eslint-config-prettier": "^10.1.8",
@@ -41,8 +43,7 @@
         "lint-staged": "^17.1.0",
         "prettier": "^3.9.5",
         "prisma": "^6.19.3",
-        "vitest": "^4.1.10",
-        "@nuxt/eslint": "^1.16.0"
+        "vitest": "^4.1.10"
     },
     "lint-staged": {
         "*.{js,mjs,vue}": [

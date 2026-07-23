@@ -10,7 +10,6 @@
         </p>
         <div style="display: flex; gap: var(--s3); justify-content: center; margin-top: var(--s6); flex-wrap: wrap">
             <NuxtLink class="btn btn--primary" to="/">Kembali ke Beranda</NuxtLink>
-            <NuxtLink class="btn btn--outline" to="/portal/login">Masuk Portal Klien</NuxtLink>
         </div>
     </div>
 </template>

@@ -4,7 +4,25 @@ import { fileURLToPath } from 'node:url'
 export default defineNuxtConfig({
     compatibilityDate: '2025-01-01',
     devtools: { enabled: true },
-    modules: ['@nuxtjs/tailwindcss', '@nuxt/fonts', '@nuxt/icon', '@nuxt/image', '@nuxt/eslint'],
+    modules: ['@nuxtjs/tailwindcss', '@nuxt/fonts', '@nuxt/icon', '@nuxt/image', '@nuxt/eslint', '@nuxtjs/sitemap'],
+    // Domain belum dibeli saat ini (ridwanco.com direncanakan) — override via env NUXT_PUBLIC_SITE_URL saat sudah live.
+    site: {
+        url: process.env.NUXT_PUBLIC_SITE_URL || 'https://ridwanco.com',
+    },
+    sitemap: {
+        exclude: ['/portal/**'],
+    },
+    // Portal klien masih mock tanpa backend — jangan sampai ke-index atau muncul di link publik.
+    routeRules: {
+        '/portal/**': { robots: false },
+        '/**': {
+            headers: {
+                'X-Content-Type-Options': 'nosniff',
+                'X-Frame-Options': 'DENY',
+                'Referrer-Policy': 'strict-origin-when-cross-origin',
+            },
+        },
+    },
     // Auto-import composable di subfolder (composables/[page]/...) — default Nuxt hanya scan top-level.
     imports: {
         dirs: ['composables/**'],

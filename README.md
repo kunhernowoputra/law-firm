@@ -1,75 +1,58 @@
-# Nuxt Minimal Starter
+# Ridwan & Co. Law Office — Website
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Website marketing kantor hukum Ridwan & Co. — Nuxt 4 (Vue + Nitro), vanilla JavaScript (tanpa TypeScript), Tailwind CSS.
+
+Standar coding & struktur project: lihat [`CONVENTIONS.md`](./CONVENTIONS.md).
+
+> Portal klien (`/portal/**`) masih prototipe frontend (mock, tanpa backend/auth) — belum dilink dari navigasi publik dan di-`noindex` via `routeRules`. Jangan dianggap fitur live.
 
 ## Setup
 
-Make sure to install dependencies:
-
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+## Development
 
 ```bash
-# npm
 npm run dev
+```
 
-# pnpm
-pnpm dev
+Jalan di `http://localhost:3000`.
 
-# yarn
-yarn dev
+## Quality Gate
 
-# bun
-bun run dev
+```bash
+npm run lint       # ESLint
+npm run test       # Vitest
+npm run verify:all # lint + test (jalankan sebelum PR/deploy)
 ```
 
 ## Production
 
-Build the application for production:
-
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+npm run build      # build Nitro server
+npm run generate   # build static (kalau full-static)
+npm run preview    # preview build production secara lokal
 ```
 
-Locally preview production build:
+Deploy ke Vercel (project sudah linked, lihat `.vercel/project.json`). Push ke branch `main` untuk trigger deploy production.
+
+### Environment Variables
+
+Salin `.env.example` → `.env` untuk local dev. Variabel production di-set lewat dashboard Vercel:
+
+| Variable               | Wajib? | Keterangan                                                                          |
+| ---------------------- | ------ | ----------------------------------------------------------------------------------- |
+| `DATABASE_URL`         | Belum  | Prisma/Postgres — belum dipakai fitur apapun saat ini (schema kosong)               |
+| `NUXT_PUBLIC_SITE_URL` | Ya     | Domain production, dipakai sitemap.xml & meta SEO (default: `https://ridwanco.com`) |
+
+## Database (Prisma)
 
 ```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
+npm run db:generate  # generate Prisma client
+npm run db:migrate   # buat & jalankan migration (dev)
+npm run db:studio    # buka Prisma Studio
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Schema (`prisma/schema.prisma`) saat ini kosong — belum ada fitur yang butuh database.
