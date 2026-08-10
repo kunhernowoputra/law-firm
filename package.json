@@ -46,7 +46,7 @@
         "husky": "^9.1.7",
         "lint-staged": "^17.1.0",
         "prettier": "^3.9.5",
-        "prisma": "^6.19.3",
+        "prisma": "^7.9.1",
         "vitest": "^4.1.10",
         "wrangler": "^4.113.0"
     },
